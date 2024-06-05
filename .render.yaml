@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: spring-boot-app
+    env: docker
+    buildCommand: "mvn package"
+    startCommand: "java -jar target/*.jar"
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
