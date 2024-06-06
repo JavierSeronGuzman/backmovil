@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class User {
     private String num;
-    private Integer latitud;
-    private Integer longitud;
-    private Integer potencia;
+    private Double latitud;
+    private Double longitud;
+    private Double potencia;
 }
